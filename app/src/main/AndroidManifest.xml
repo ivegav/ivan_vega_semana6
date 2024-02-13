@@ -18,15 +18,11 @@
         <activity
             android:name=".RegistrarInfraccionActivity"
             android:exported="false" />
-        <activity
-            android:name=".RegistrarInfraccionAcitivy"
-            android:exported="false" />
+
         <activity
             android:name=".VisualizarInfraccionesActivity"
             android:exported="false" />
-        <activity
-            android:name=".RegistrarInformacionActivity"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -36,6 +32,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".providers.InfraccionContentProvider"
+            android:authorities="com.tu.paquete.provider"
+            android:exported="false" />
+
     </application>
 
 </manifest>

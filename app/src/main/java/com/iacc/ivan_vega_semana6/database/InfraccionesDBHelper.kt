@@ -15,8 +15,8 @@ class InfraccionesDBHelper(context: Context) :
     companion object {
         private const val DATABASE_VERSION = 1
         private const val DATABASE_NAME = "infracciones.db"
-        private const val TABLE_NAME = "infracciones"
-        private const val COLUMN_FOLIO = "folio"
+        internal const val TABLE_NAME = "infracciones"
+        internal const val COLUMN_FOLIO = "folio"
         private const val COLUMN_RUT_INSPECTOR = "rut_inspector"
         private const val COLUMN_NOMBRE_LOCAL = "nombre_local"
         private const val COLUMN_DIRECCION = "direccion"
